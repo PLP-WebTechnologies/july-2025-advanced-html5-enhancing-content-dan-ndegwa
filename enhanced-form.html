@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Section Demo Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 1.5rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    table, th, td {
+      border: 1px solid #555;
+    }
+    th, td {
+      padding: 0.5rem;
+      text-align: center;
+    }
+    fieldset {
+      border: 1px solid #777;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 0.8rem;
+      box-sizing: border-box;
+    }
+    button {
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Multi-Section Demo Page</h1>
+  </header>
+
+  <main>
+    <!-- Section with Lists -->
+    <section>
+      <h2>Popular Programming Languages</h2>
+      <p>Here are some languages categorized into types:</p>
+      <h3>Ordered List (Top 3 for Beginners)</h3>
+      <ol>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+      </ol>
+
+      <h3>Unordered List (Systems Programming)</h3>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Rust</li>
+      </ul>
+    </section>
+
+    <!-- Section with Table -->
+    <section>
+      <h2>Sample Student Grades</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>90</td>
+            <td>85</td>
+            <td>88</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>75</td>
+            <td>89</td>
+            <td>92</td>
+          </tr>
+          <tr>
+            <td>Charlie</td>
+            <td>82</td>
+            <td>79</td>
+            <td>85</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section with Media -->
+    <section>
+      <h2>Embedded Media</h2>
+      <p>Here is an image and a short video:</p>
+      <img src="https://via.placeholder.com/400x200" alt="Sample placeholder image">
+
+      <video width="400" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Section with Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fname">Full Name:</label>
+          <input type="text" id="fname" name="fname" required minlength="3" placeholder="John Doe">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10-digit number">
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="4" maxlength="15">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6">
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">--Select--</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          
+          <label>
+            <input type="checkbox" name="subscribe" value="newsletter"> Subscribe to newsletter
+          </label>
+
+          <label>
+            <input type="radio" name="contact" value="email" required> Contact via Email
+          </label>
+          <label>
+            <input type="radio" name="contact" value="phone"> Contact via Phone
+          </label>
+
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" placeholder="Your message..."></textarea>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Demo Page</p>
+  </footer>
+
+</body>
+</html>
